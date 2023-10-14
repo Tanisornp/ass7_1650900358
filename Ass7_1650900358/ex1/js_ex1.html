@@ -1,0 +1,36 @@
+<!-- Ex1: Start JS Tutorial -->
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>JavaScript Ex1</title>
+</head>
+
+<body>
+  <h2>JavaScript Ex1: Start JS Tutorial</h2>
+
+  <!-- ตัวอย่างที่ 1.1: เปลี่ยนเนื้อหาให้ HTML -->
+  <p id="ex1-1">Ex1.1 เปลี่ยนเนื้อหาให้ HTML</p>
+  <button
+    onclick='document.getElementById("ex1-1").innerHTML = "Ex1.1 เปลี่ยนเนื้อหาโดย JavaScript !!"'>เปลี่ยนเนื้อหา</button>
+<hr />
+  <!-- Ex1.2: JavaScript control Inline CSS Style -->
+  <p>Ex1.2 เปลี่ยนขนาด ตัวอักษร</p>
+  <p id="ex1-2">เปลี่ยนขนาด ตัวอักษร</p>
+  <button onclick="document.getElementById('ex1-2').style.fontSize='30px'">เปลี่ยนขนาด</button>
+  <hr />
+  <!-- Ex1.3: JavaScript control HTML Elements -->
+  <p>Ex1.3 ซ่อน & แสดง HTML Elements.</p>
+  <p id="ex1-3">ซ่อน & แสดง HTML Elements.</p>
+  <button onclick="document.getElementById('ex1-3').style.display='none'">ซ่อน</button>
+  <button type="button" onclick="document.getElementById('ex1-3').style.display='block'">แสดง</button>
+  <hr />
+    <!-- Ex1: JavaScript control HTML Attribute Values -->
+<p>แบบฝึกหัด1: เปลี่ยนโค้ดให้สามารถทำงานได้ โดยถ้ากดปุ่มปิดตาให้แสดงรูปปิดตา กดปุ่มเปิดตาให้แสดงรูปเปิดตา</p>
+<button onclick="document.getElementById('myImage').src='OpenEyes.jpg'">เปิดตา</button>
+<img alt="" id="myImage" src="CloseEyes.jpg" style="width: 100px" />
+<button onclick="document.getElementById('myImage').src='CloseEyes.jpg'">ปิดตา</button>
+  
+</body>
+
+</html>
